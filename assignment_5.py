@@ -8,8 +8,10 @@ def maxZeros(nums):
         if n > n_max:
           n_max = n
     else:
-      if n > n_max:
+      if n >= n_max:
         n_max = n
+        n=0
+      else:
         n=0
   print(n_max)
 # 1:   nums[0]=1; 
@@ -25,3 +27,5 @@ def maxZeros(nums):
 maxZeros([0,1,0,0])
 maxZeros([1, 0, 0, 0, 0, 1, 0, 1, 0, 0])
 maxZeros([1, 1, 1, 1, 1])
+maxZeros([0,0,0,1,0,0,0,1,0])
+maxZeros([0,0,0,1,0,0,1,0,0])
