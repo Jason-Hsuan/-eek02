@@ -4,14 +4,9 @@ def maxZeros(nums):
   for i in range(0, len(nums)):
     if nums[i] == 0:
       n+=1
-      if i == len(nums)-1:#8
-        if n > n_max:
-          n_max = n
-    else:
-      if n >= n_max:
+      if n > n_max:
         n_max = n
-        n=0
-      else:
+    else:  
         n=0
   print(n_max)
 #1:   nums[0]=0; n=1;
